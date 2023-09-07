@@ -1,0 +1,128 @@
+.primary {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    padding-top: 65px;
+    padding-bottom: 20px;
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+
+.paginationWraper {
+    display: flex;
+    gap: 14px;
+
+    margin-top: auto;
+}
+
+.pagination {
+    width: 50px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #303030;
+}
+
+.paginationActive {
+    composes: pagination;
+    background-color: #EF8964;
+    box-shadow: 0px 1px 10px 0px rgba(230, 83, 60, 0.80);
+}
+
+.paginationCompleted {
+    composes: pagination;
+    background-color: #EFA082;
+}
+
+.videoCount {
+    position: absolute;
+    left: auto;
+    right: 88px;
+    bottom: 166px;
+}
+.caloriesCount {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+}
+
+.stepOneBg {
+    background-image: url(../../assets/images/mobile/other@1x/side-view-people-training-gym-2@1x.jpg)
+}
+.stepTwoBg {
+    background-image: url(../../assets/images/mobile/other@1x/side-view-people-training-gym-3@1x.jpg)
+}
+.stepThreeBg {
+    background-image: url(../../assets/images/mobile/other@1x/side-view-people-training-gym-4@1x.jpg)
+}
+
+@media screen and (min-width: 768px) {
+    .primary {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .pagination {
+        width: 80px;
+        height: 4px;
+    }
+
+    .stepOneBg {
+        background-image: url(../../assets/images/tablet/other@1x/side-view-people-training-gym-2@1x.jpg)
+    }
+    
+    .stepTwoBg {
+        background-image: url(../../assets/images/tablet/other@1x/side-view-people-training-gym-3@1x.jpg)
+    }
+    
+    .stepThreeBg {
+        background-image: url(../../assets/images/tablet/other@1x/side-view-people-training-gym-4@1x.jpg)
+    }
+
+    .videoCount {
+        position: absolute;
+        left: auto;
+        right: 129px;
+        bottom: 182px;
+    }
+    .caloriesCount {
+        position: absolute;
+        right: 0;
+        bottom: 16px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .stepOneBg {
+        background-image: url(../../assets/images/desktop/other@1x/side-view-people-training-gym-2@1x.jpg)
+    }
+    
+    .stepTwoBg {
+        background-image: url(../../assets/images/desktop/other@1x/side-view-people-training-gym-3@1x.jpg)
+    }
+    
+    .stepThreeBg {
+        background-image: url(../../assets/images/desktop/other@1x/side-view-people-training-gym-4@1x.jpg)
+    }
+
+    .videoCount {
+        position: absolute;
+        left: 674px;
+        right: auto;
+        bottom: 288px;
+    }
+    
+    .caloriesCount {
+        position: absolute;
+        right: 0;
+        bottom: 139px;
+    }
+}

@@ -1,0 +1,92 @@
+input {
+  display: block;
+}
+
+.signInBtn {
+  display: flex;
+  padding: 12px 40px;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  font-family: inherit;
+  background-color: var(--primary-accent);
+  color: var(--white);
+  border-radius: 12px;
+  border: 1px solid rgba(239, 237, 232, 0.3);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: calc(18 / 16);
+  margin-bottom: 12px;
+}
+.signInBtn:hover {
+  color: var(--white);
+  background: var(--secondary-accent);
+}
+@media screen and (min-width: 768px) {
+  .signInBtn {
+    margin-top: 64px;
+  }
+}
+.singin {
+  row-gap: 18px;
+}
+.signin__input {
+  outline: none;
+  height: 46px;
+  min-width: 283px;
+  background-color: transparent;
+  color: rgba(239, 237, 232, 0.3);
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  border-radius: 12px;
+  border: 1px solid rgba(239, 237, 232, 0.6);
+  margin-bottom: 18px;
+  padding: 14px;
+}
+.signin__input:hover,
+.signin__input:focus,
+.signin__input:active {
+  outline-offset: 0;
+  border: 1px solid var(--primary-accent);
+}
+
+@media screen and (min-width: 768px) {
+  .signin__input {
+    height: 52px;
+    max-width: 364px;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+  }
+}
+
+.errorMessage {
+  color: #d80027;
+  font-size: 12px;
+  line-height: calc(18 / 12);
+  letter-spacing: 0.12px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  height: 18px;
+}
+.errorIcon {
+  width: 16px;
+  display: inline-block;
+  fill: rgba(216, 0, 39, 1);
+}
+.successMessage {
+  color: #3cbf61;
+  font-size: 12px;
+  line-height: calc(18 / 12);
+  letter-spacing: 0.12px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  height: 18px;
+}
+.successIcon {
+  width: 16px;
+  display: inline-block;
+  fill: rgba(60, 191, 97, 1);
+}

@@ -1,0 +1,121 @@
+.ExersiceModalWindowWrap {
+  width: 335px;
+  padding: 48px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ExersiceModalWindow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ExersiceModalWindowImg {
+  width: 270px;
+  height: 226px;
+  border-radius: 12px;
+  border: 1px solid rgba(239, 237, 232, 0.2);
+  object-fit: cover;
+}
+
+.ExersiceModalWindowList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.ExersiceModalWindowLink {
+  border-radius: 12px;
+  border: 1px solid rgba(239, 237, 232, 0.2);
+  background: rgba(239, 237, 232, 0.05);
+  padding: 12px 12px 12px 18px;
+}
+
+.ExersiceModalWindowLinkSub {
+  color: rgba(239, 237, 232, 0.4);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.ExersiceModalWindowLinkTitle {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.ExersiceModalWindowTimer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ExersiceModalWindowBtn {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 12px 32px;
+  border-radius: 12px;
+  background: var(--primary-accent);
+  align-self: flex-start;
+}
+
+.ExersiceModalWindowBtn:hover {
+  background: var(--orange-1, #ef8964);
+  color: #efede8;
+}
+
+@media screen and (min-width: 768px) {
+  .ExersiceModalWindow {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .ExersiceModalWindowWrap {
+    width: 768px;
+    padding: 48px 32px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "image list"
+      "timer button";
+  }
+  .ExersiceModalWindowTimer {
+    display: flex;
+  }
+  .boxImage {
+    grid-area: image;
+  }
+
+  .boxTimer {
+    grid-area: timer;
+  }
+
+  .boxList {
+    grid-area: list;
+  }
+
+  .boxButton {
+    grid-area: button;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .ExersiceModalWindowImg {
+    margin-right: 16px;
+  }
+
+  .ExersiceModalWindowBtn {
+    align-self: flex-end;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+}
