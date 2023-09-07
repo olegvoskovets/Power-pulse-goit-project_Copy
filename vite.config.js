@@ -4,7 +4,7 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/power-pulse-goit",
+  base: "/Power-pulse-goit-project_Copy",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

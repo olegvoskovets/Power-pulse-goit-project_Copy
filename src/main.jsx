@@ -10,15 +10,12 @@ import { store, persistor } from "@/redux/store";
 import { ToastContainer } from "react-toastify";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-
-
   <Provider store={store}>
     <PersistGate persistor={persistor}>
-      <BrowserRouter basename="/power-pulse-goit">
+      <BrowserRouter basename="/Power-pulse-goit-project_Copy">
         <App />
         <ToastContainer />
       </BrowserRouter>
     </PersistGate>
   </Provider>
-
 );
